@@ -1,12 +1,12 @@
 public class HollowEquiTriangle {
     public static void main(String[] args) {
 
-        int n = 4; // height
+        int height = 4; // height
         int star = 1;
-        int space = n - 1;
+        int space = height - 1;
 
         // Print the equilateral triangle
-        for (int i = 1; i <= n; i++) {
+        for (int i = 1; i <= height; i++) {
 
             // Print spaces before the '*' to create the triangular shape
             for (int j = 1; j <= space; j++) {
@@ -15,7 +15,7 @@ public class HollowEquiTriangle {
 
             // Print '*' for the first and last column in each row
             for (int j = 1; j <= star; j++) {
-                if(i == n){
+                if(i == height){
                     System.out.print("*");
                 }else if (j == 1 || j == star) {
                     System.out.print("*");
